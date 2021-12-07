@@ -110,6 +110,7 @@ main .main {
 }
 
 main .main .wrapper {
+  height: 100vh;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +119,9 @@ main .main .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .main .wrapper .main_header {
@@ -127,9 +131,8 @@ main .main .wrapper .main_header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin-bottom: 25px;
 }
 
@@ -140,6 +143,45 @@ main .main .wrapper .main_header h4 {
 main .main .wrapper .main_header h5 {
   font-size: 20px;
   letter-spacing: 2px;
+}
+
+main .main .wrapper .main_header .all-items {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .main .wrapper .main_header .all-items .items-first {
+  margin-top: 50px;
+  width: 33.33%;
+  height: 300px;
+  padding-bottom: 30px;
+}
+
+main .main .wrapper .main_header .all-items .items-second {
+  width: 33.33%;
+  height: 300px;
+  padding-bottom: 30px;
+}
+
+main .main .wrapper .main_header .all-items img {
+  width: 90%;
+  height: 90%;
+}
+
+main .main .wrapper .main_header .all-items img:hover {
+  opacity: 0.4;
+}
+
+main .main .wrapper .main_header .all-items .map {
+  margin-top: 70px;
+  width: 70%;
+  height: 80%;
 }
 
 main .main img {
