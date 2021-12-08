@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>kowd-order</title>
+    <style>
+      .container{
+        width: 600px;
+        margin: 0 auto;
+      }
+      
+      label.title{
+        font-weight: bold;
+        width: 80px;
+        float: left;
+      }
+      div.centered{
+        text-align: center;
+      }
+      fieldset{
+        margin: 15px 10px;
+      }
+      fieldset legend{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        color: blueviolet;
+      }
+      .container ul li{
+        margin-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+          kowd
+        </h1>
+        <div class="bottom">
+          <h3>
+            - patisserie
+          </h3>
+          <p>
+            Knock<br>
+            On<br>
+            Wood
+          </p>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#tag2">Menu</a></li>
+              <li><a href="#tag3">Order</a></li>
+              <li><a href="#tag4">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="main">
+          <div class="wrapper">
+        <div class="container">
+          <h1>상품 주문서</h1>
+          <form>
+            <fieldset>
+              <legend>개인 정보</legend>
+              <ul>
+                <li>
+                  <label for="uname" class="title">이름</label>
+                  <input type="text" id="uname" placeholder="여백없이 입력">
+                </li>
+                <li>
+                  <label for="tell" class="title">연락처</label>
+                  <input type="tel" id="tel1" placeholder="연락가능 번호">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>주문 정보</legend>
+              <ul>
+                <li>
+                  <label><input type="checkbox">크리스마스 선물세트</label>
+                  <label><input type="number" value="0" min="0" max="5"></label>
+                </li>
+                <li>
+                  <label><input type="checkbox">딸기 홀케익 1호</label>
+                  <label><input type="number" value="0" min="0" max="5"></label>
+                </li>
+                <li>
+                  <label><input type="checkbox">피칸 타르트(16cm)</label>
+                  <label><input type="number" value="0" min="0" max="5"></label>
+                </li>
+                <li>
+                  <label><input type="checkbox">치즈 케이크 1호</label>
+                  <label><input type="number" value="0" min="0" max="5"></label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="centered">
+              <input type="submit" value="주문하기">
+              <input type="reset" value="다시 작성">
+            </div>
+          </form>
+
+        </div>
+        </div>
+        </section>
+      </main>
+</body>
+</html>
