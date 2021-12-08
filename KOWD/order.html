@@ -12,27 +12,58 @@
         width: 600px;
         margin: 0 auto;
       }
-      
-      label.title{
+      .container h1{
         font-weight: bold;
-        width: 80px;
+        font-size: 45px;
+        margin-bottom: 100px;
+      }
+      label.title{
+        font-size: 30px;
+        font-weight: bold;
+        width: 150px;
         float: left;
+        margin-left: 15px;
+      }
+      .box{
+        font-size: 18px;
+      }
+      #uname{
+        font-size: 20px;
+      }
+      #tel1{
+        font-size: 20px;
+      }
+      fieldset li{
+        height: 30px;
       }
       div.centered{
         text-align: center;
       }
       fieldset{
         margin: 15px 10px;
+        border: gray 1px solid;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+      label.set{
+        margin-left: 15px;
+        font-size: 25px;
+        font-weight: bold;
       }
       fieldset legend{
-        margin-bottom: 10px;
+        margin-left: 15px;
+        margin-bottom: 20px;
         font-weight: bold;
-        font-size: 18px;
-        color: blueviolet;
+        font-size: 35px;
+        color: forestgreen;
       }
       .container ul li{
         margin-bottom: 10px;
       }
+      .centered{
+        height: 60px;
+      }
+
     </style>
 </head>
 <body>
@@ -76,32 +107,36 @@
                   <label for="tell" class="title">연락처</label>
                   <input type="tel" id="tel1" placeholder="연락가능 번호">
                 </li>
+                <li>
+                  <label for="tell" class="title">픽업시간</label>
+                  <input type="tel" id="tel1" placeholder="ex) 월 13:00">
+                </li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>주문 정보</legend>
               <ul>
                 <li>
-                  <label><input type="checkbox">크리스마스 선물세트</label>
-                  <label><input type="number" value="0" min="0" max="5"></label>
+                  <label class="set"><input type="checkbox">크리스마스 선물세트</label>
+                  <label><input class="box" type="number" value="0" min="0" max="5"></label>
                 </li>
                 <li>
-                  <label><input type="checkbox">딸기 홀케익 1호</label>
-                  <label><input type="number" value="0" min="0" max="5"></label>
+                  <label class="set"><input type="checkbox">딸기 홀케익 1호</label>
+                  <label><input class="box" type="number" value="0" min="0" max="5"></label>
                 </li>
                 <li>
-                  <label><input type="checkbox">피칸 타르트(16cm)</label>
-                  <label><input type="number" value="0" min="0" max="5"></label>
+                  <label class="set"><input type="checkbox">피칸 타르트(16cm)</label>
+                  <label><input class="box" type="number" value="0" min="0" max="5"></label>
                 </li>
                 <li>
-                  <label><input type="checkbox">치즈 케이크 1호</label>
-                  <label><input type="number" value="0" min="0" max="5"></label>
+                  <label class="set"><input type="checkbox" class="set">치즈 케이크 1호</label>
+                  <label><input class="box" type="number" value="0" min="0" max="5"></label>
                 </li>
               </ul>
             </fieldset>
             <div class="centered">
-              <input type="submit" value="주문하기">
-              <input type="reset" value="다시 작성">
+              <input class="box" type="submit" value="주문하기">
+              <input class="box" type="reset" value="다시 작성">
             </div>
           </form>
 
