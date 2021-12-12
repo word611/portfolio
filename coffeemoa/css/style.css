@@ -34,7 +34,6 @@ body {
 }
 
 .navbar ul li {
-  list-style: none;
   float: left;
   padding-left: 15px;
   padding-right: 15px;
@@ -56,7 +55,57 @@ body {
 
 .hero-header img {
   width: 100%;
-  height: 100%;
+  height: 330px;
+}
+
+.hero-header2 {
+  padding: 30px;
+  height: 350px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-header2 img {
+  width: 100%;
+  height: 180px;
+}
+
+.main-index p {
+  font-size: 25px;
+  color: #545454;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.main-index ul {
+  font-size: 25px;
+  color: #545454;
+  font-weight: bold;
+  margin-bottom: 60px;
+  list-style: none;
+  text-align: center;
+}
+
+.main-index ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.main-index ul li a {
+  color: #545454;
+}
+
+.main-index ul li a b {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.main-index ul li a:hover {
+  opacity: 2;
+  color: black;
 }
 
 .wrapper {
@@ -64,8 +113,8 @@ body {
   display: grid;
   -ms-grid-columns: (0.5fr)[3];
       grid-template-columns: repeat(3, 0.5fr);
-  -ms-grid-rows: 50vh auto;
-      grid-template-rows: 50vh auto;
+  -ms-grid-rows: 55vh auto;
+      grid-template-rows: 55vh auto;
   gap: 1px;
 }
 
@@ -74,7 +123,7 @@ body {
 }
 
 .wrapper .product {
-  padding: 20px;
+  padding: 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 60% auto;
@@ -97,6 +146,10 @@ body {
           justify-content: center;
 }
 
+.wrapper .product .product__photo:hover {
+  opacity: 0.4;
+}
+
 .wrapper .product .product__data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,28 +159,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-}
-
-.main-index p {
-  font-size: 27px;
-  color: #545454;
-  font-weight: bold;
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.logo-icon {
-  display: block;
-  width: 240px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 120px;
-  margin-bottom: 80px;
-}
-
-.logo-icon img {
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size: 17px;
 }
 
 footer {

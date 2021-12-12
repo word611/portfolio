@@ -27,7 +27,6 @@ body{
         padding-left: 0px;
         list-style: none;
         li{
-            list-style: none;
             float: left;
             padding-left: 15px;
             padding-right: 15px;
@@ -46,15 +45,56 @@ body{
         margin-top: 20px;
         margin-bottom: 60px;
         img{
-        
             width: 100%;
-            height: 100%;
+            height: 330px;
+        }
+    }
+    .hero-header2{
+        padding: 30px;
+        height: 350px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+            height: 180px;
+        }
+    }
+    .main-index p{
+        font-size: 25px;
+        color: #545454;
+        font-weight: bold;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .main-index ul{
+        font-size: 25px;
+        color: #545454;
+        font-weight: bold;
+        margin-bottom: 60px;
+        list-style: none;
+        text-align: center;
+        li{
+        display: inline-block;
+        padding-left: 20px;
+            a{
+                color: #545454;
+                b{
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+            a:hover{
+                opacity: 2;
+                color: black;
+            }
         }
     }
     .wrapper {
         display: grid;
         grid-template-columns: repeat(3, 0.5fr);
-        grid-template-rows: 50vh auto;
+        grid-template-rows: 55vh auto;
         gap: 1px;
         .product
         {
@@ -62,7 +102,7 @@ body{
         }
 
         .product {
-          padding: 20px;
+          padding: 10px;
           display: grid;
           a{
               color: #545454;;
@@ -75,35 +115,19 @@ body{
               display: grid;
             justify-content: center;
           }
+          .product__photo:hover{
+              opacity: 0.4;
+          }
           .product__data {
-
             display: flex;
             flex-direction: column;
             text-align: center;
-            
+            font-size: 17px;
           }
         }
       }
-    .main-index p{
-        font-size: 27px;
-        color: #545454;
-        font-weight: bold;
-        margin-bottom: 60px;
-        text-align: center;
-    }
-    
-    .logo-icon{
-        display: block;
-        width: 240px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 120px;
-        margin-bottom: 80px;
-        img{
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-    }
+
+
     footer {
         margin: 0p;
         display: grid;
@@ -114,6 +138,7 @@ body{
         .footer-box{
             display: flex;
             justify-content: space-around;
+
             .text{
                 margin-top: 10px;
             }
