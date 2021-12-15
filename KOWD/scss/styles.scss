@@ -10,6 +10,7 @@ body {
   font-family:Georgia, 'Times New Roman', Times, serif;
   background-color: $green;
 }
+/*header 부분*/
 header {
   position: fixed;
   top: 0;
@@ -72,7 +73,7 @@ header {
     }
   }
 }
-
+/*main 부분*/
 main {
   margin-left: $fixedWidth;
   .main {
