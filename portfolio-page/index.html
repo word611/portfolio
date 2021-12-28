@@ -1,39 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Full page scroll</title>
+	<title>임애선 포트폴리오</title>
 	<link rel="stylesheet" type="text/css" href="css/full-page-scroll.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<style type="text/css">
-	.section1 {
-		background-color: #7DBCD4;
-	}
-
-	.section2 {
-		background-color: #98C19F; 
-	}
-
-	.section3 {
-		background-color:  #A199E2;
-	}
-
 	.section4 {
 		background-color:  #CC938E;
-	}
-	
-	section div {
-		font-family: 'Open Sans';
-		font-style: normal;
-		text-align: center;
-		position: relative;
-		top: 50%;  
-		transform: translateY(-50%);
-	}
-
-	span {
-		font-size: 4em;
-		font-style: normal;
-		color: #fff;
 	}
 
 
@@ -42,24 +15,97 @@
 <body>
 	<div id="main" class="scroll-container">
 		<section class="section1">
+			<nav id="gnb">
+				<ul>
+					<li><a href="index.html">HOME</a>
+					</li>
+					<li><a href="">ABOUT ME</a>
+					</li>
+					<li><a href="">PORTFOLIO</a>
+					</li>
+					<li><a href="">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
 			<div class="text_box" data-trigger>
 				<span class="text"></span>
-			</div>
+			</div>	
+			<video id="videobcg" autoplay="" loop="">
+				<source src="img/Timelapse of the clouds.mp4" type="video/mp4">
+			</video>	
 		</section>
 		<section class="section2">
-			<div>
-				<span>ABOUT ME</span>				
+			<div id="about" class="about clearfix">
+				<span class="main_title">ABOUT ME</span>
+				<div class="a_left">
+					<figure class="vid">
+						<img src="img/pic.jpg">
+					</figure>
+				</div>
+				<div class="a_right">
+					<dl>
+						<dt><span>Profile</span></dt>
+						<dd>임애선 / 서울특별시 서대문구 거주</dd>
+						<dd>1992. 07. 29</dd>
+						<dd>010 7417 7576</dd>
+						<dd>dotjs92@gmail.com</dd>
+					</dl>
+					<dl>
+						<dt><span>History</span></dt>
+						<dd>2021.08.25 ~ 2022.02.17</dd>
+						<dd>한국소프트웨어인재개발원 데이터융합 서비스 구현</dd>
+						<dd>JAVA 개발자 풀스택 과정</dd>
+					</dl>
+					<dl>
+						<dt><span>License</span></dt>
+						<dd>SQL 개발자 2021.12.17 취득</dd>
+					</dl>
+				</div>				
 			</div>
 		</section>
-		<section class="section3">
-			<div>
-				<span>PORTFOLIO</span>				
-			</div>
+		<section class="section3" id="work">
+			<span class="main_title">PORTFOLIO</span>
+			<div class="p_list">
+                <ul>
+                    <li class="p_all p_pc p_reponsive">
+                        <a href="https://word611.github.io/portfolio/KOWD/">
+                            <span><img src="img/kowd.png" alt="kowd"></span>
+                            <p>개인 프로젝트(일반)</p>
+                        </a>
+                    </li>
+                    <li class="p_all p_pc">
+                        <a href="https://word611.github.io/portfolio/coffeemoa/">
+                            <span><img src="img/coffeemoa.png" alt="coffeemoa"></span>
+                            <p>개인 프로젝트(쇼핑몰)</p>
+                        </a>
+                    </li>
+                    <li class="p_all p_pc">
+                        <a href="">
+                            <span><img src="img/180.png" alt="팀프로젝트"></span>
+                            <p>팀 프로젝트(보드게임 카페)</p>
+                        </a>
+                    </li>
+					
+                </ul>
+            </div>
 		</section>
 		<section class="section4">
 			<div>
-				<span>CONTACT ME</span>				
+				<span class="main_title">CONTACT ME</span>				
 			</div>
+			<span class="contact">
+				<div class="contact_box">
+					<h3>임애선</h3>
+					<span>Lim ae sun</span>
+					<div>
+						<ul>
+							<li>Phone : 010 7417 7576</li>
+							<li>E-mail : dotjs92@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+			<p>COPYRIGHT ⓒ 2018 by LIM AE SUN. all rights reserved. </p>
+			</span>
 		</section>
 	</div>
 	<script src="js/full-page-scroll.js"></script>
